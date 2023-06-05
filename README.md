@@ -45,12 +45,22 @@ Formally, random variable is a mathematical formalization of of quantity or obje
 
 From now on, we'll refer to random variable as to $\mathcal{X}$.
 
-Random variable $\mathcal{X}$ could represent many things, for instance a coin toss, in which case it could take on two separate values being tail and head. Or it could represent a count of heads when we toss 10 coins at a time. Or the time one has to wait in a queue or the amount of organisms living in a unit of space.
-
 We describe the behaviour of random variable with cumulative distribution functions which tell us the likelihoods of $\mathcal{X}$ taking on certain value or values.
 
 It helps us simplify mathematical expressions as follows:  
 $\mathcal{P}(\mathcal{X} < 5) = \mathcal{P}(\{e \mid e \in \mathcal{E} \land e < 5\})$, where $\mathcal{E}$ is the set of all events that can occur. Such expression would result in probability that $\mathcal{X}$ will take on value smaller than 5.
+
+There are continous random variables, which can take on at most enumerable number of values, and there are continous random variables, which can take on any value in an interval for instance.
+
+### Example
+Random variable $\mathcal{X}$ could represent many things, for instance:
+- a coin toss, in which case it could take on two separate values being tail and head,
+
+- a count of heads when we toss 10 coins at a time,
+
+- the time one has to wait in a queue,
+
+- the amount of organisms living in a unit of space.
 
 ### Probability distribution functions
 They are tightly connected to random variables and are used to formally describe its behavioral patterns.
@@ -64,5 +74,3 @@ $$
 $$
 
 This must hold true, otherwise it would mean that the probability of anything occuring at all is lower than 100%.
-
-Probability distribution functions can describe continuous variables or discrete variables.
