@@ -50,7 +50,7 @@ We describe the behaviour of random variable with cumulative distribution functi
 It helps us simplify mathematical expressions as follows:  
 $\mathcal{P}(\mathcal{X} < 5) = \mathcal{P}(\{e \mid e \in \mathcal{E} \land e < 5\})$, where $\mathcal{E}$ is the set of all events that can occur. Such expression would result in probability that $\mathcal{X}$ will take on value smaller than 5.
 
-There are continous random variables, which can take on at most enumerable number of values, and there are continous random variables, which can take on any value in an interval for instance.
+There are discrete random variables, which can take on at most enumerable number of values, and there are continous random variables, which can take on any value in an interval for instance.
 
 ### Example
 Random variable $\mathcal{X}$ could represent many things, for instance:
@@ -74,3 +74,5 @@ $$
 $$
 
 This must hold true, otherwise it would mean that the probability of anything occuring at all is lower than 100%.
+
+
