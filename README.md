@@ -58,6 +58,7 @@ They are tightly connected to random variables and are used to formally describe
 Let's say that random variable $\mathcal{X}$ is defined by probability distribution function $\mathcal{F}$, then $\mathcal{F}(x) = \mathcal{P}(\mathcal{X} \leq x)$  
 
 Probability distribution functions must follow certain rules, for instance:
+
 $$
 \lim_{x \to \infty} \mathcal{F}(x) = 1 
 $$
