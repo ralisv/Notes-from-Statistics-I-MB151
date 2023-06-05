@@ -29,8 +29,8 @@ The $\mathcal{Data}$ is what we know about test.
 So what we're truly interested in is $\mathcal{P}(\mathcal{covid} \mid \mathcal{+test})$.
 
 $$
-\mathcal{P}(\mathcal{covid} given \mathcal{+test}) =
-\frac{\mathcal{P}(\mathcal{+test} given \mathcal{covid}) \cdot \mathcal{P}(\mathcal{covid})}
+\mathcal{P}(\mathcal{covid} \mid \mathcal{+test}) =
+\frac{\mathcal{P}(\mathcal{+test} \mid \mathcal{covid}) \cdot \mathcal{P}(\mathcal{covid})}
 {\mathcal{P}(\mathcal{+test})} =
 \frac{\mathcal{1} \cdot \frac{1}{50}}{\frac{1}{50} + \frac{49}{50} \cdot 0.001} = 0.9532888
 $$
