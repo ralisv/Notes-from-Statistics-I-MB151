@@ -75,4 +75,25 @@ $$
 
 This must hold true, otherwise it would mean that the probability of anything occuring at all is lower than 100%.
 
+#### Probability distribution function for discrete variable
 
+Let's have a discrete random variable representing the number of coin tosses before having our first head. So the range of values $\mathcal{R}_{\mathcal{X}} = \{1, 2, 3, ...\}$
+
+$$
+\mathcal{F}(x) = 2^{-x}
+$$
+
+And the graph would of such cummulative distribution function would look like this:
+
+![cummulative-discrete](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/59169278-87f0-4c9a-ad75-e65ccf760440)
+
+
+The graph would go into infinity in reality, however, the likelihoods of $\mathcal{X}$ becoming higher lowers exponentially, so those chances become negligible.
+
+#### Probability distribution function for continuous variable
+
+Let's have a continuous random variable representing the amout of time we need to spend in queue in shop, the range of values $\mathcal{R}_{\mathcal{X}} = [0, 5]$ (in minuts)
+
+If the waiting time were completely random, the cummulative distribution function would look like this:
+
+![cummulative-continuous](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/736fb683-be3b-44fb-823b-5c2c6a15a3c2)
