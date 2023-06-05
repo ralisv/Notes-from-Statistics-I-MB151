@@ -36,3 +36,32 @@ $$
 $$
 
 So one should really believe the test.
+
+
+## Random variable
+
+### What's a random variable
+Formally, random variable is a mathematical formalization of of quantity or object which depends on random events.
+
+From now on, we'll refer to random variable as to $\mathcal{X}$.
+
+Random variable $\mathcal{X}$ could represent many things, for instance a coin toss, in which case it could take on two separate values being tail and head. Or it could represent a count of heads when we toss 10 coins at a time. Or the time one has to wait in a queue or the amount of organisms living in a unit of space.
+
+We describe the behaviour of random variable with cumulative distribution functions which tell us the likelihoods of $\mathcal{X}$ taking on certain value or values.
+
+It helps us simplify mathematical expressions as follows:  
+$\mathcal{P}(\mathcal{X} < 5) = \mathcal{P}(\{e \mid e \in \mathcal{E} \land e < 5\})$, where $\mathcal{E}$ is the set of all events that can occur. Such expression would result in probability that $\mathcal{X}$ will take on value smaller than 5.
+
+### Probability distribution functions
+They are tightly connected to random variables and are used to formally describe its behavioral patterns.
+
+Let's say that random variable $\mathcal{X}$ is defined by probability distribution function $\mathcal{F}$, then $\mathcal{F}(x) = \mathcal{P}(\mathcal{X} \leq x)$  
+
+Probability distribution functions must follow certain rules, for instance:
+$$
+\lim_{x \to \infty} \mathcal{F}(x) = 1 
+$$
+
+This must hold true, otherwise it would mean that the probability of anything occuring at all is lower than 100%.
+
+Probability distribution functions can describe continuous variables or discrete variables.
