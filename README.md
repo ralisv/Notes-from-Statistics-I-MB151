@@ -238,6 +238,11 @@ It is defined by two parameters:
 
 #### Example graph
 
+![normal-distribution-0-1](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/1a33edd5-6abd-4f1c-9171-70bb95265a6e)
+
+![normal-distribution-175-6](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/45e43d6f-e8a1-44cc-8df7-758bab7ffcdf)
+
+
 #### Practical example
 
 An average man is 175 cm tall with a standard deviation of 6 cm, how many percent of men are taller than 180 cm?
