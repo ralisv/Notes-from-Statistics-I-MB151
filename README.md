@@ -194,6 +194,10 @@ It is defined by one parameter:
 
 #### Example graph
 
+![geometric-distribution-0 8](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/14ede7d4-5f20-4622-8f30-c657ac6297c2)
+
+![geometric-distribution-0 5](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/77f908c3-4ae8-44de-8efc-ec61275c5130)
+
 #### Practical example
 
 A sniper has got a 0.8 probability of hitting a target but he only has 3 bullets.
