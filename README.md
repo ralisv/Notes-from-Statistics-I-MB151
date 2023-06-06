@@ -98,7 +98,16 @@ If the waiting time were completely random, the cummulative distribution functio
 
 ![cummulative-continuous](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/736fb683-be3b-44fb-823b-5c2c6a15a3c2)
 
-## Probability distributions
+## Discrete probability distributions
+
+Discrete probability distributions are probability distributions that can take on only a countable number of values.
+
+Each probability distribution is associated with a probability mass function (PMF),
+which is a function that gives the probability that a discrete random variable is exactly equal to some value.
+
+Mean of a discrete probability distribution is the expected value of the random variable, therefore the average value that we would receive after selecting $\infty$ number of samples.
+
+Variance of a discrete probability distribution is the expected value of the squared deviation of a random variable from its mean.
 
 ### Bernoulli distribution
 
@@ -115,7 +124,12 @@ Binomial distribution is a discrete probability distribution which models the nu
 It is defined by two parameters being:
 - $n$, the number of trials,
 - $\theta$, the probability for success in each Bernoulli trial,
-as follows: $\mathcal{P}(x) = \(\binom{n}{x}\) \theta^x\(1 - \theta\)^{n - x}$
+
+#### PMF = $\mathcal{P}(x) = \(\binom{n}{x}\) \theta^x\(1 - \theta\)^{n - x}$
+
+#### Mean = $n \cdot \theta$
+
+#### Variance = $n \cdot \theta \cdot (1 - \theta)$
 
 #### Example graph
 
@@ -128,13 +142,47 @@ with $n = 20$ and $\theta = 0.5$,
 
 ![binomial-distribution-20-0 5](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/baf35ca9-f6f0-4abb-b2e0-041de2745ad6)
 
+#### Practical example
+
+A sniper has got a 0.8 probability of hitting a target. There are 15 different targets. What is the probability that he will hit at least 14 of them?
+
+$$
+\mathcal{P}(x \geq 14) = \mathcal{P}(x = 14) + \mathcal{P}(x = 15) = \(\binom{15}{14}\) 0.8^{14} 0.2^{1} + \(\binom{15}{15}\) 0.8^{15} 0.2^{0} = 0.1319 + 0.0352 = 0.1671
+$$
+
+### Poisson distribution
+
+Poisson distribution is a discrete probability distribution which models the number of events occuring
+in a fixed interval of time or space, if these events occur with a known constant rate and independently of the time since the last event.
+
+It is defined by one parameter:
+- $\lambda$, which represents the expected number of events in the interval.
+
+#### PMF = $\mathcal{P}(x) = \frac{\lambda^x e^{-\lambda}}{x!}$
+
+#### Mean = $\lambda$
+
+#### Variance = $\lambda$
+
+#### Example graph
+
+#### Practical example
+
+An OPC-UA server receives 50 read requests per second on average. What is the probability that it will receive 42 read requests in a second?
+
+$$
+\mathcal{P}(x = 42) = \frac{50^{42} e^{-50}}{42!} = 0.0312
+$$
+
 ## Central Limit Theorem
 
 ### Theorem
 
-Under certain conditions, the average or sum of many samples of a random variable with finite mean and variance is approximately normally distributed.
+Under certain conditions, the average or sum of many samples of a random variable with finite mean $\mu$ and standard deviation $\sigma$ is approximately normally distributed.
 
-According to the CLT, as n approaches infinity, the distribution of the sample mean M tends to a normal distribution with mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
+According to the CLT, as n (sample length) approaches infinity, the distribution of the sample mean tends to a normal distribution with mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
+
+In case we need a distribution for sample sum, mean would be $\mu n$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
 
 Let $\mathcal{X}_1, \mathcal{X}_2, \dots, \mathcal{X}_n$ be a sequence of independent and identically distributed random variables with finite mean $\mu$ and variance $\sigma^2$.
 Then the random variable $\mathcal{S}_n$ representing the sample sum is defined as:
