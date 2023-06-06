@@ -168,10 +168,36 @@ It is defined by one parameter:
 
 #### Practical example
 
-An OPC-UA server receives 50 read requests per second on average. What is the probability that it will receive 42 read requests in a second?
+An OPC-UA server receives 50 read requests per second on average.
+What is the probability that it will receive 42 read requests in a second?
 
 $$
 \mathcal{P}(x = 42) = \frac{50^{42} e^{-50}}{42!} = 0.0312
+$$
+
+### Geometric distribution
+
+Geometric distribution is a discrete probability distribution which models the number of independent Bernoulli trials
+needed to get the first success.
+
+It is defined by one parameter:
+- $\theta$, the probability for success in each Bernoulli trial.
+
+#### PMF = $\mathcal{P}(x) = \theta (1 - \theta)^{x - 1}$
+
+#### Mean = $\frac{1}{\theta}$
+
+#### Variance = $\frac{1 - \theta}{\theta^2}$
+
+#### Example graph
+
+#### Practical example
+
+A sniper has got a 0.8 probability of hitting a target but he only has 3 bullets.
+What is the probability that he won't hit the target?
+
+$$
+\mathcal{P}(x > 3) = 1 - \mathcal{P}(x \leq 3) = 1 - \mathcal{P}(x = 1) - \mathcal{P}(x = 2) - \mathcal{P}(x = 3) = 1 - 0.8 - 0.16 - 0.032 = 0.008
 $$
 
 ## Central Limit Theorem
