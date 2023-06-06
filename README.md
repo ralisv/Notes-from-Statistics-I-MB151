@@ -115,7 +115,9 @@ Bernulli distribution is a discrete probability distribution is linked to a rand
 probability of success and $1 - \theta$ probability of failure. Therefore the set of value the $\mathcal{X}$ can take on has two elements.
 
 #### Example graph
-![cumulative-alternative](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/4790aca9-4155-4795-874b-7751d3353de5)
+
+![bernoulli-distribution-0 6](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/d9c3a548-b809-4602-8f1f-ff2932770831)
+
 
 ### Binomial distribution
 
@@ -133,14 +135,11 @@ It is defined by two parameters being:
 
 #### Example graph
 
-Binomial distribution with $n = 10$ and $\theta = 0.3$,
-
-![binomial-distribution-10-0 3](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/30b173b8-cb9d-4959-9dce-4f2e54a073c3)
+![binomial-distribution-10-0 3](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/2a9054ab-a748-4974-ac20-31f0c9cc4a85)
 
 
-with $n = 20$ and $\theta = 0.5$,
+![binomial-distribution-20-0 5](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/ec35b664-dd76-4928-b3e9-18eb655d9035)
 
-![binomial-distribution-20-0 5](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/baf35ca9-f6f0-4abb-b2e0-041de2745ad6)
 
 #### Practical example
 
@@ -165,6 +164,10 @@ It is defined by one parameter:
 #### Variance = $\lambda$
 
 #### Example graph
+
+![poisson-distribution-2](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/b8f8e269-44ca-4d55-986d-3581f26a5d0b)
+
+![poisson-distribution-10](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/478672ad-6ec4-49c7-a35d-b4d259c1820a)
 
 #### Practical example
 
