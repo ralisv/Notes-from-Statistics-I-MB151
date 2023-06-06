@@ -74,3 +74,35 @@ $$
 $$
 
 This must hold true, otherwise it would mean that the probability of anything occuring at all is lower than 100%.
+
+## Central Limit Theorem
+
+### Theorem
+
+Under certain conditions, the average or sum of many samples of a random variable with finite mean and variance is approximately normally distributed.
+
+According to the CLT, as n approaches infinity, the distribution of the sample mean M tends to a normal distribution with mean $\mu$ and standard deviation $\frac{\sigma}{\sqrt{n}}$.
+
+Let $\mathcal{X}_1, \mathcal{X}_2, \dots, \mathcal{X}_n$ be a sequence of independent and identically distributed random variables with finite mean $\mu$ and variance $\sigma^2$.
+Then the random variable $\mathcal{S}_n$ representing the sample sum is defined as:
+
+$$
+\mathcal{S}_n = \frac{\mathcal{X}_1 + \mathcal{X}_2 + \dots + \mathcal{X}_n - n \cdot \mu}{\sigma \sqrt{n}}
+$$
+
+The random variable $\mathcal{S}_n$ converges in distribution to a normal $\mathcal{N}(0, 1)$ as $n \to \infty$.
+
+### Example
+
+Let's have a look at the example of rolling a dice. We know that the mean of the dice is 3.5 and the variance is 2.92.
+What is the chance that the average of 10000 dice rolls will be greater than 3.6?
+
+$$
+\mathcal{P}(\mathcal{M} > 3.6) = 1 - pnorm(\frac{3.6 * 10000 - 3.5 * 10000}{2.92 * sqrt(10000)}, mean=0, sd=1) = 0.0003
+$$
+
+And if we increase the number of dice rolls to 100000?
+
+$$
+\mathcal{P}(\mathcal{M} > 3.6) = 1 - pnorm(\frac{3.6 * 100000 - 3.5 * 100000}{2.92 * sqrt(100000)}, mean=0, sd=1) = \text{almost zero}
+$$
