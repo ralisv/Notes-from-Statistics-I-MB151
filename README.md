@@ -207,6 +207,45 @@ $$
 \mathcal{P}(x > 3) = 1 - \mathcal{P}(x \leq 3) = 1 - \mathcal{P}(x = 1) - \mathcal{P}(x = 2) - \mathcal{P}(x = 3) = 1 - 0.8 - 0.16 - 0.032 = 0.008
 $$
 
+
+## Continuous probability distributions
+
+Continuous probability distributions are probability distributions that represent a behaviour of a continuous random variable.
+
+They are associated with a probability density function (PDF) which is a function that describes the relative likelihood for this random variable to take on a given value.
+
+If we want to find the probability of a random variable being in a certain interval, we need to integrate the PDF over that interval.
+
+Mean of a continuous probability distribution is defined as $\int_{-\infty}^{\infty} x \cdot f(x) dx$, where $f(x)$ is the PDF.
+
+Variance of a continuous probability distribution is defined as $\int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) dx$, where $f(x)$ is the PDF and $\mu$ is the mean.
+
+### Normal distribution
+
+Normal distribution is a continuous probability distribution which models a random variable whose PDF has a bell-shaped curve.
+
+It is the most important distribution in statistics because of the Central Limit Theorem.
+
+It is defined by two parameters:
+- $\mu$, the mean,
+- $\sigma$, the standard deviation.
+
+#### PDF = $f(x) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{(x - \mu)^2}{2 \sigma^2}}$
+
+#### Mean = $\mu$
+
+#### Variance = $\sigma^2$
+
+#### Example graph
+
+#### Practical example
+
+An average man is 175 cm tall with a standard deviation of 6 cm, how many percent of men are taller than 180 cm?
+
+$$
+\mathcal{P}(x > 180) = 1 - \mathcal{P}(x \leq 180) = 1 - \int_{-\infty}^{180} \frac{1}{6 \sqrt{2 \pi}} e^{-\frac{(x - 175)^2}{2 \cdot 6^2}} dx = 1 - 0.7977 = 0.2023
+$$
+
 ## Central Limit Theorem
 
 ### Theorem
