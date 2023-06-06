@@ -50,7 +50,7 @@ We describe the behaviour of random variable with cumulative distribution functi
 It helps us simplify mathematical expressions as follows:  
 $\mathcal{P}(\mathcal{X} < 5) = \mathcal{P}(\{e \mid e \in \mathcal{E} \land e < 5\})$, where $\mathcal{E}$ is the set of all events that can occur. Such expression would result in probability that $\mathcal{X}$ will take on value smaller than 5.
 
-There are continous random variables, which can take on at most enumerable number of values, and there are continous random variables, which can take on any value in an interval for instance.
+There are discrete random variables, which can take on at most enumerable number of values, and there are continous random variables, which can take on any value in an interval for instance.
 
 ### Example
 Random variable $\mathcal{X}$ could represent many things, for instance:
@@ -74,6 +74,59 @@ $$
 $$
 
 This must hold true, otherwise it would mean that the probability of anything occuring at all is lower than 100%.
+
+#### Probability distribution function for discrete variable
+
+Let's have a discrete random variable representing the number of coin tosses before having our first head. So the range of values $\mathcal{R}_{\mathcal{X}} = \{1, 2, 3, ...\}$
+
+$$
+\mathcal{F}(x) = 2^{-x}
+$$
+
+And the graph would of such cummulative distribution function would look like this:
+
+![cummulative-discrete](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/59169278-87f0-4c9a-ad75-e65ccf760440)
+
+
+The graph would go into infinity in reality, however, the likelihoods of $\mathcal{X}$ becoming higher lowers exponentially, so those chances become negligible.
+
+#### Probability distribution function for continuous variable
+
+Let's have a continuous random variable representing the amout of time we need to spend in queue in shop, the range of values $\mathcal{R}_{\mathcal{X}} = [0, 5]$ (in minuts)
+
+If the waiting time were completely random, the cummulative distribution function would look like this:
+
+![cummulative-continuous](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/736fb683-be3b-44fb-823b-5c2c6a15a3c2)
+
+## Probability distributions
+
+### Bernoulli distribution
+
+Bernulli distribution is a discrete probability distribution is linked to a random trial with the $\theta$
+probability of success and $1 - \theta$ probability of failure. Therefore the set of value the $\mathcal{X}$ can take on has two elements.
+
+#### Example graph
+![cumulative-alternative](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/4790aca9-4155-4795-874b-7751d3353de5)
+
+### Binomial distribution
+
+Binomial distribution is a discrete probability distribution which models the number of successes in a fixed number $n$ of independent Bernoulli trials.
+
+It is defined by two parameters being:
+- $n$, the number of trials,
+- $\theta$, the probability for success in each Bernoulli trial,
+as follows: $\mathcal{P}(x) = \(\binom{n}{x}\) \theta^x\(1 - \theta\)^{n - x}$
+
+#### Example graph
+
+Binomial distribution with $n = 10$ and $\theta = 0.3$,
+
+![binomial-distribution-10-0 3](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/30b173b8-cb9d-4959-9dce-4f2e54a073c3)
+
+
+with $n = 20$ and $\theta = 0.5$,
+
+![binomial-distribution-20-0 5](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/baf35ca9-f6f0-4abb-b2e0-041de2745ad6)
 
 ## Central Limit Theorem
 
