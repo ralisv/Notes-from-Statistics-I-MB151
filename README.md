@@ -280,6 +280,8 @@ It is defined by one parameter:
 
 #### Example graph
 
+![exponential-distribution-50](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/a999bc7d-8df5-4424-bb89-0d3e58ba3764)
+
 #### Practical example
 
 An OPC-UA server receives 50 read requests per second on average. What is the probability that it will receive more than 5 request in 20 ms?
@@ -307,6 +309,10 @@ It is defined by two parameters:
 #### Variance = $\frac{(b - a)^2}{12}$
 
 #### Example graph
+
+![uniform-distribution-0-1](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/7290e48f-f4ba-47fb-8197-101857ed6dc9)
+
+![uniform-distribution-0-1](https://github.com/ralisv/Notes-from-Statistics-I-MB151/assets/90596867/02c67963-ac90-47ab-8792-fbcb8d28c789)
 
 #### Practical example
 
