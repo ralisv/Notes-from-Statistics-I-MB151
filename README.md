@@ -350,11 +350,13 @@ Let's have a look at the example of rolling a dice. We know that the mean of the
 What is the chance that the average of 10000 dice rolls will be greater than 3.6?
 
 $$
-\mathcal{P}(\mathcal{M} > 3.6) = 1 - pnorm(\frac{3.6 * 10000 - 3.5 * 10000}{2.92 * sqrt(10000)}, mean=0, sd=1) = 0.0003
+\mathcal{P}(\mathcal{M} > 3.6) = 1 - F_{stdnorm}(\frac{3.6 * 10000 - 3.5 * 10000}{2.92 * sqrt(10000)}) = 0.0003
 $$
 
 And if we increase the number of dice rolls to 100000?
 
 $$
-\mathcal{P}(\mathcal{M} > 3.6) = 1 - pnorm(\frac{3.6 * 100000 - 3.5 * 100000}{2.92 * sqrt(100000)}, mean=0, sd=1) = \text{almost zero}
+\mathcal{P}(\mathcal{M} > 3.6) = 1 - F_{stdnorm}(\frac{3.6 * 100000 - 3.5 * 100000}{2.92 * sqrt(100000)}) = \text{almost zero}
 $$
+
+Where $F_{stdnorm}$ is standard normal distribution, therefore with $\mu = 0$ and $\sigma = 1$ 
