@@ -143,7 +143,7 @@ It is defined by two parameters being:
 
 #### Practical example
 
-A sniper has got a 0.8 probability of hitting a target. There are 15 different targets. What is the probability that he will hit at least 14 of them?
+A sniper has got a 0.8 probability of hitting a target and 15 bullets. There are 15 different targets. What is the probability that he will hit at least 14 of them?
 
 $$
 \mathcal{P}(x \geq 14) = \mathcal{P}(x = 14) + \mathcal{P}(x = 15) = \(\binom{15}{14}\) 0.8^{14} 0.2^{1} + \(\binom{15}{15}\) 0.8^{15} 0.2^{0} = 0.1319 + 0.0352 = 0.1671
@@ -216,6 +216,8 @@ They are associated with a probability density function (PDF) which is a functio
 
 If we want to find the probability of a random variable being in a certain interval, we need to integrate the PDF over that interval.
 
+Doing that, we'll get the cumulative distribution function (CDF) which is a function that describes the probability that the random variable will be less than or equal to a certain value.
+
 Mean of a continuous probability distribution is defined as $\int_{-\infty}^{\infty} x \cdot f(x) dx$, where $f(x)$ is the PDF.
 
 Variance of a continuous probability distribution is defined as $\int_{-\infty}^{\infty} (x - \mu)^2 \cdot f(x) dx$, where $f(x)$ is the PDF and $\mu$ is the mean.
@@ -243,7 +245,44 @@ It is defined by two parameters:
 An average man is 175 cm tall with a standard deviation of 6 cm, how many percent of men are taller than 180 cm?
 
 $$
-\mathcal{P}(x > 180) = 1 - \mathcal{P}(x \leq 180) = 1 - \int_{-\infty}^{180} \frac{1}{6 \sqrt{2 \pi}} e^{-\frac{(x - 175)^2}{2 \cdot 6^2}} dx = 1 - 0.7977 = 0.2023
+\mathcal{P}(x > 180) = 1 - \mathcal{P}(x \leq 180) = 1 - \int_{-\infty}^{180} \frac{1}{6 \sqrt{2 \pi}} e^{-\frac{(x - 175)^2}{2 \cdot 6^2}} dx
+$$
+
+However, such integral is pretty hard to solve, so we can transform it to a standard normal distribution N(mean=0, sd=1).
+
+$$
+\mathcal{P}(x > 180) = 1 - \mathcal{P}(x \leq 180) = 1 - \mathcal{P_N}(x \leq \frac{180 - 175}{6}) = 1 - \mathcal{P_N}(x \leq 0.833) = 1 - 0.7977 = 0.2023
+$$
+
+Where $\mathcal{P_N}$ is the CDF of the standard normal distribution, the value of CDF for 0.833 can be found in the table of values of the standard normal distribution.
+
+### Exponential distribution
+
+Exponential distribution is a continuous probability distribution which models the time between events in a Poisson process.
+
+It is the continuous analogue of the geometric distribution and a particular case of the gamma distribution.
+
+It is defined by one parameter:
+- $\lambda$, which represents the rate of events.
+
+#### PDF = $f(x) = \lambda e^{-\lambda x}$
+
+#### CDF = $F(x) = 1 - e^{-\lambda x}$
+
+#### Mean = $\frac{1}{\lambda}$
+
+#### Variance = $\frac{1}{\lambda^2}$
+
+#### Example graph
+
+#### Practical example
+
+An OPC-UA server receives 50 read requests per second on average. What is the probability that it will receive more than 5 request in 20 ms?
+
+We're going to need to convert the time to milliseconds. 50 requests per second means 1 request per 20 ms.
+
+$$
+\mathcal{P}(x > 5) = 1 - \mathcal{P}(x \leq 5) = e^{-1 \cdot 5} = 0.0.0067
 $$
 
 ## Central Limit Theorem
