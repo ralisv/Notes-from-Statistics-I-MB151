@@ -290,6 +290,33 @@ $$
 \mathcal{P}(x > 5) = 1 - \mathcal{P}(x \leq 5) = e^{-1 \cdot 5} = 0.0.0067
 $$
 
+### Uniform distribution
+
+Uniform distribution is a continuous probability distribution which models a random variable that is equally likely to take on any value within an interval.
+
+It is defined by two parameters:
+- $a$, the lower bound of the interval,
+- $b$, the upper bound of the interval.
+
+#### PDF = $f(x) = \frac{1}{b - a}$
+
+#### CDF = $F(x) = \frac{x - a}{b - a}$
+
+#### Mean = $\frac{a + b}{2}$
+
+#### Variance = $\frac{(b - a)^2}{12}$
+
+#### Example graph
+
+#### Practical example
+
+A random number generator generates a random number between 0 and 1. What is the probability that the number will be between 0.2 and 0.5?
+
+$$
+\mathcal{P}(0.2 \leq x \leq 0.5) = \mathcal{P}(x \leq 0.5) - \mathcal{P}(x \leq 0.2) = 0.5 - 0.2 = 0.3
+$$
+
+
 ## Central Limit Theorem
 
 ### Theorem
