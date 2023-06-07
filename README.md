@@ -216,6 +216,8 @@ They are associated with a probability density function (PDF) which is a functio
 
 If we want to find the probability of a random variable being in a certain interval, we need to integrate the PDF over that interval.
 
+The chance of a random variable following any continuous probability distribution taking on one particular value is always $\frac{1}{\infty} = 0$.
+
 Doing that, we'll get the cumulative distribution function (CDF) which is a function that describes the probability that the random variable will be less than or equal to a certain value.
 
 Mean of a continuous probability distribution is defined as $\int_{-\infty}^{\infty} x \cdot f(x) dx$, where $f(x)$ is the PDF.
